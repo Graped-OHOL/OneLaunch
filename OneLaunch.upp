@@ -1,0 +1,36 @@
+description "A launcher for the One Hour One Life game. Load multiple accounts with ease.\377";
+
+uses
+	CtrlLib,
+	RichText,
+	RichEdit,
+	TabBar;
+
+file
+	OneLaunch.h,
+	OneLaunch.rc,
+	OneLaunch.cpp,
+	OneLaunch.lay,
+	main.cpp,
+	config.h,
+	config.cpp,
+	util.h,
+	util.cpp,
+	tabCtrl.h,
+	tabCtrl.cpp,
+	accCache.h,
+	accCache.cpp,
+	clientSettings.h,
+	clientSettings.cpp,
+	tabAccManager.h,
+	tabAccManager.cpp,
+	tabLauncher.h,
+	tabLauncher.cpp,
+	tabSettings.h,
+	tabSettings.cpp,
+	gameLauncher.h,
+	gameLauncher.cpp;
+
+mainconfig
+	"" = "GUI";
+

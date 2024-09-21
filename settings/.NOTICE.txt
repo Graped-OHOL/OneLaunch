@@ -1,0 +1,7 @@
+These are all the settings files that OneLaunch can/will modify in your OHOL /settings/ folder.
+
+If an ini file is not found OneLaunch will attempt to create it and populate it with "0"
+
+If you accidently generated these files before you initialized the settings folder in your OHOL install (this should never happen)
+you can press the "Default" button in the settings tab of OneLaunch and it will populate all of these files with the OHOL
+defaults. (Matching the files on the OneLife GitHub Repository exactly.

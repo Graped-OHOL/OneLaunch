@@ -1,0 +1,4 @@
+Ok, you can modify them, but don't do it while OneLaunch is open.
+
+Also, if OneLaunch overwrites your edits for any reason, it's your fault. It's much easier to modify this data from the
+OneLaunch application anyway. So if you don't know what you're doing, dont do it!
