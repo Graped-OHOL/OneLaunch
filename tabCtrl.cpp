@@ -17,7 +17,7 @@ void Tabs::init() {
     mainWindow->tabs.Add(*tabS, "Settings");
     mainWindow->tabs.Set(0);
 
-    mainWindow->LauncherTabBtn.SetStyle(Button::StyleOk());
+    mainWindow->LauncherTabBtn.SetStyle(Button::StyleLeftEdge());
 
     mainWindow->LauncherTabBtn.WhenPush = [=] { switchTab(0); };
     mainWindow->AccountManagerTabBtn.WhenPush = [=] { switchTab(1); };
@@ -40,7 +40,7 @@ void Tabs::switchTab(int tabIndex) {
     if (tabIndex >= 0 && tabIndex < 3) {
 
         mainWindow->tabs.Set(tabIndex);
-        getTabButton(tabIndex)->SetStyle(Button::StyleOk());
+        getTabButton(tabIndex)->SetStyle(Button::StyleLeftEdge());
     }
 }
 
