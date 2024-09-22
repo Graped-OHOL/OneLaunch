@@ -26,15 +26,10 @@ void Tabs::init() {
 
 
 void Tabs::switchTab(int tabIndex) {
-
-    static const Button::Style* styles[] = {
-
-        &Button::StyleNormal(), &Button::StyleNormal(), &Button::StyleNormal()
-    };
     
     for (int i = 0; i < 3; ++i) {
 
-        getTabButton(i)->SetStyle(*styles[i]);
+        getTabButton(i)->SetStyle(Button::StyleNormal());
     }
 
     if (tabIndex >= 0 && tabIndex < 3) {
