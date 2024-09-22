@@ -13,11 +13,11 @@ This project aims to provide an intuitive interface for users to launch multiple
 - ### [Installation](#installation)
 - ### [Building](#building)
 
-<a name="features"/>
+<a name="features"/></a>
 ## Features
 The main window features three tabs :
 
-<a name="launchertab"/>
+<a name="launchertab"/></a>
 ### Launcher Tab
 ![Launcher Tab](http://ohol.isbad.gg/img/launchertab.png)
 The *Launcher Tab* is home to the *Account Selector*, *Launcher Controls*, and *Debug Console*.
@@ -26,7 +26,7 @@ The *Launcher Tab* is home to the *Account Selector*, *Launcher Controls*, and *
 - The *Launch All* button launches an instance of the game for every configured account, regardless of selection.
 - The *Debug Console* outputs a lot of information when debug mode is enabled, but only some general messages if not.
 
-<a name="accmngrtab"/>
+<a name="accmngrtab"/></a>
 ### Account Manager Tab
 ![Account Manager Tab](http://ohol.isbad.gg/img/accountmanagertab.png)
 The *Account Manager Tab* is home to the *Account Manager List*, and *Account Editor*.
@@ -46,7 +46,7 @@ The *Account Manager Tab* is home to the *Account Manager List*, and *Account Ed
     - The *Yumhack Key* field is used by Yumhack for the Yumhack Chat.
 - The *Save/Create* button will say "Save" if the editor is in edit mode, or "Create" if in create mode. It will save whatever data is in the fields, and clear the fields when pressed.
 
-<a name="settingstab"/>
+<a name="settingstab"/></a>
 ### Settings Tab
 ![Settings Tab](http://ohol.isbad.gg/img/settingstab.png)
 The *Settings Tab* is home to the *Client Settings*, *Launcher Settings*, a *Notice*, and a *Defaults* button.
@@ -96,7 +96,7 @@ The *Settings Tab* is home to the *Client Settings*, *Launcher Settings*, a *Not
 - The *Notice* is a notice message. Read it.
 - The *Defaults* button will restore both the OHOL Client Settings (Based of default settings in the OneLife Repository) and the OneLaunch settings to their defaults.
 
-<a name="installation"/>
+<a name="installation"/></a>
 ## Installation
 Installing OneLaunch couldn't be easier. To download you will find two options: the executable, and a zip with the executable and two folders with files. The zip is for advanced users, it is recommended you just download the executable. Once you have the executable just place it in your main OHOL directory. IF you're going with the zip file, just extract the contents of the zip into your main OHOL directory.
 
@@ -104,7 +104,7 @@ When OneLaunch is properly installed the `OneLaunch.exe` and `OneLife.exe` shoul
 
 Notes about Zip file : I supplied this to show anyone who cares which files OneLaunch will generate if they don't exist, and what data it will populate them with. IF you're looking to install OneLaunch into an OHOL installtion that you've used you should just install the executable.
 
-<a name="building"/>
+<a name="building"/></a>
 ##  Building
 Compiling is pretty straight forward. The GUI was built with [Ultimate++](https://www.ultimatepp.org/). I kept the project structure readable by TheIDE. The U++ library includes TheIDE. Load it, open the project, modify the UI if you wish, and built it using TheIDE.
     
