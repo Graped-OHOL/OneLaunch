@@ -4,7 +4,7 @@
 bool isLoading = true;
 bool configChanged = false;
 int olVersion = 1;
-int olSubversion = 0;
+int olSubversion = 1;
 String olVersionStr = Format("%d.%d", olVersion, olSubversion);
 
 Vector<String> debugQ;
