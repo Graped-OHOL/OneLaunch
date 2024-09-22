@@ -17,6 +17,7 @@ class Tabs {
 
         static void switchTab(int tabIndex);
         static Button* getTabButton(int index);
+        static RichTextCtrl* getTabButtonFrame(int index);
 
 };
 
