@@ -5,27 +5,20 @@ This project aims to provide an intuitive interface for users to launch multiple
 
 ### Our [Support Discord](https://discord.gg/grieflife)
 
-## Contents
-- ### [Features](#features)
-    - #### [Launcher Tab](#launcher-tab)
-    - #### [Account Manager Tab](#account-manager-tab)
-    - #### [Settings Tab](#settings-tab)
-- ### [Installation](#installation)
-- ### [Building](#building)
-
+<a name="features"/></a>
 ## Features
 The main window features three tabs :
+
 ### Launcher Tab
-![Launcher Tab](http://ohol.isbad.gg/img/launchertab.png)
+![Launcher Tab](http://ohol.isbad.gg/img/launchertab1.1.png)
 The *Launcher Tab* is home to the *Account Selector*, *Launcher Controls*, and *Debug Console*.
 - The *Account Selector* is a multi-selection array that allows users to select one or more accounts to launch.
 - The *Launch* button launches the game for the account(s) selected in the *Account Selector*.
 - The *Launch All* button launches an instance of the game for every configured account, regardless of selection.
 - The *Debug Console* outputs a lot of information when debug mode is enabled, but only some general messages if not.
 
-
 ### Account Manager Tab
-![Account Manager Tab](http://ohol.isbad.gg/img/accountmanagertab.png)
+![Account Manager Tab](http://ohol.isbad.gg/img/accountmanagertab1.1.png)
 The *Account Manager Tab* is home to the *Account Manager List*, and *Account Editor*.
 - The *Account Manager List* is a single selection array that gives a detailed list of the accounts, with each of their data columns.
     - If Yumhack is enabled/disabled, the CName and YHKey columns are shown/hidden. Like in the screenshot. (Turning Yumhack off requires restarting OneLaunch to hide them)
@@ -43,9 +36,8 @@ The *Account Manager Tab* is home to the *Account Manager List*, and *Account Ed
     - The *Yumhack Key* field is used by Yumhack for the Yumhack Chat.
 - The *Save/Create* button will say "Save" if the editor is in edit mode, or "Create" if in create mode. It will save whatever data is in the fields, and clear the fields when pressed.
 
-
 ### Settings Tab
-![Settings Tab](http://ohol.isbad.gg/img/settingstab.png)
+![Settings Tab](http://ohol.isbad.gg/img/settingstab1.1.png)
 The *Settings Tab* is home to the *Client Settings*, *Launcher Settings*, a *Notice*, and a *Defaults* button.
 - The *Client Settings* are all settings related to the OHOL client. I have avoided Yumlife specific settings, but they may come in the future. The settings are as follows :
 
