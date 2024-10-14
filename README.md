@@ -88,17 +88,17 @@ The *Settings Tab* is home to the *Client Settings*, *Launcher Settings*, a *Not
     - The *Debug Mode* setting enables extra (a stupid amount of extra) messages to be printed in the *Debug Console* if enabled.
     - The *Executable* setting defines which executable to use. Don't try adding a path, your executable and OneLaunch should both be in the main OHOL directory. Just type the name of the executable here, with the .exe extension.
     - The *Launch Delay* setting defines how long a period (in seconds) OneLaunch will wait between launching accounts.
-    -The *Selector Data* setting defines what data is shown in the *Account Selector* when OneLaunch loads. You can strill toggle between the three options ("IDs", "Emails", "Names") in the *Launcher Tab*.
+    -The *Selector Data* setting defines what data is shown in the *Account Selector* when OneLaunch loads. You can still toggle between the three options ("IDs", "Emails", "Names") in the *Launcher Tab*.
     
 - The *Notice* is a notice message. Read it.
 - The *Defaults* button will restore both the OHOL Client Settings (Based of default settings in the OneLife Repository) and the OneLaunch settings to their defaults.
 
 ## Installation
-Installing OneLaunch couldn't be easier. To download you will find two options: the executable, and a zip with the executable and two folders with files. The zip is for advanced users, it is recommended you just download the executable. Once you have the executable just place it in your main OHOL directory. IF you're going with the zip file, just extract the contents of the zip into your main OHOL directory.
+Installing OneLaunch couldn't be easier. To download you will find two options: the executable, and a zip with the executable and two folders with files. The zip is for advanced users, it is recommended you just download the executable. Once you have the executable just place it in your main OHOL directory. If you're going with the zip file, just extract the contents of the zip into your main OHOL directory.
 
-When OneLaunch is properly installed the `OneLaunch.exe` and `OneLife.exe` should be right next to eachother. OneLaunch depends ont his location to path to the settings folder and find your executable. IF you're using Yumlife or some other mod, you can configure OneLaunch to work with it by changing the setting in the *Settings Tab*
+When OneLaunch is properly installed the `OneLaunch.exe` and `OneLife.exe` should be right next to eachother. OneLaunch depends ont his location to path to the settings folder and find your executable. If you're using Yumlife or some other mod, you can configure OneLaunch to work with it by changing the setting in the *Settings Tab*
 
-Notes about Zip file : I supplied this to show anyone who cares which files OneLaunch will generate if they don't exist, and what data it will populate them with. IF you're looking to install OneLaunch into an OHOL installtion that you've used you should just install the executable.
+Notes about Zip file : I supplied this to show anyone who cares which files OneLaunch will generate if they don't exist, and what data it will populate them with. If you're looking to install OneLaunch into an OHOL installtion that you've used you should just install the executable.
 
 ##  Building
 Compiling is pretty straight forward. The GUI was built with [Ultimate++](https://www.ultimatepp.org/). I kept the project structure readable by TheIDE. The U++ library includes TheIDE. Load it, open the project, modify the UI if you wish, and built it using TheIDE.

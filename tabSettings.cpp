@@ -126,24 +126,26 @@ void Settings::onDefaultSettingsBtnPressed() {
 
 void Settings::onOptionChanged(Option& option, const String& optionName) {
 
-    option.Set(option.Get() ? 1 : 0);
+    int optVal = option.Get() ? 1 : 0;
+
+    option.Set(optVal);
 
     Util::print("[SET] " + optionName + " set to : " + AsString(option.Get()), true);
 
     if(optionName == "yumhack") {
 
-        config.yumhack = option.Get() ? 1 : 0;
+        config.yumhack = optVal;
         OLConfig::save();
         AccMngr::toggleYumhackFields(config.yumhack);
 
     } else if(optionName == "debugMode") {
 
-        config.debug = option.Get() ? 1 : 0;
+        config.debug = optVal;
         OLConfig::save();
 
     } else {
 
-        ClientSettings::updateSetting(optionName, option.Get() ? "1" : "0");
+        ClientSettings::updateSetting(optionName, AsString(optVal));
     }
 }
 
