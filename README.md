@@ -1,97 +1,125 @@
-
 ![Logo](http://ohol.isbad.gg/img/logo.png)
-# A launcher for [One Hour One Life](https://github.com/jasonrohrer/OneLife).
-This project aims to provide an intuitive interface for users to launch multiple OHOL accounts effortlessly. Many users (griefers and legitimate players) have more than one account due to the willy-nilly use of the Curse System in OHOL. The issue they face is having multiple installs of the game or swapping out some files every time they switch accounts. This project provides an automated way of performing that latter option with a beautiful UI! Without all the hassle!
 
-### Our [Support Discord](https://discord.gg/grieflife)
+# OneLaunch: A Launcher for [One Hour One Life](https://github.com/jasonrohrer/OneLife)
 
-<a name="features"/></a>
+OneLaunch provides an intuitive interface for users to effortlessly launch multiple **One Hour One Life (OHOL)** accounts. Many players maintain multiple accounts for various reasons, including navigating the game's Curse System. Traditionally, switching between accounts requires multiple game installations or manually swapping files. OneLaunch automates this process with a user-friendly interface, eliminating the hassle.
+
+### Join Our [Support Discord](https://discord.gg/grieflife)
+
 ## Features
-The main window features three tabs :
+
+The main window features three tabs:
+
+1. [Launcher Tab](#launcher-tab)
+2. [Account Manager Tab](#account-manager-tab)
+3. [Settings Tab](#settings-tab)
 
 ### Launcher Tab
+
 ![Launcher Tab](http://ohol.isbad.gg/img/launchertab1.1.png)
-The *Launcher Tab* is home to the *Account Selector*, *Launcher Controls*, and *Debug Console*.
-- The *Account Selector* is a multi-selection array that allows users to select one or more accounts to launch.
-- The *Launch* button launches the game for the account(s) selected in the *Account Selector*.
-- The *Launch All* button launches an instance of the game for every configured account, regardless of selection.
-- The *Debug Console* outputs a lot of information when debug mode is enabled, but only some general messages if not.
+
+The **Launcher Tab** includes the **Account Selector**, **Launcher Controls**, and **Debug Console**.
+
+- **Account Selector**: Allows users to select one or more accounts to launch.
+- **Launch Button**: Launches the game for the selected account(s).
+- **Launch All Button**: Launches an instance of the game for every configured account.
+- **Debug Console**: Displays detailed information when debug mode is enabled, or general messages if not.
 
 ### Account Manager Tab
+
 ![Account Manager Tab](http://ohol.isbad.gg/img/accountmanagertab1.1.png)
-The *Account Manager Tab* is home to the *Account Manager List*, and *Account Editor*.
-- The *Account Manager List* is a single selection array that gives a detailed list of the accounts, with each of their data columns.
-    - If Yumhack is enabled/disabled, the CName and YHKey columns are shown/hidden. Like in the screenshot. (Turning Yumhack off requires restarting OneLaunch to hide them)
-- The *Account Editor* features several elements :
-- The title of the editor indicates if the *Account Editor* is in edit or create mode.
-- The *Edit* button will populate the below fields with the selected account.
-- The *Delete* button will delete a selected account. A confirmation window will pop up first.
-- The *Account Editor* has 6 fields :
-    - The *Account ID* field is a value OneLaunch uses to identify accounts. This value must be unique for every account.
-    - The *Account Email* field is the account's email for logging into OHOL.
-    - The *Account Key* field is the account's key for logging into OHOL.
-    - The *Notes* field is for your convenience. Users may log whatver data they would like here.
-    - The *Client Name* and *Yumhack Key* fields are only shown if Yumhack is enabled.
-    - The *Client Name* field is used by Yumhack to add a string to the title of the game client.
-    - The *Yumhack Key* field is used by Yumhack for the Yumhack Chat.
-- The *Save/Create* button will say "Save" if the editor is in edit mode, or "Create" if in create mode. It will save whatever data is in the fields, and clear the fields when pressed.
+
+The **Account Manager Tab** contains the **Account Manager List** and the **Account Editor**.
+
+- **Account Manager List**: Provides a detailed list of accounts with their respective data.
+  - The **CName** and **YHKey** columns are shown or hidden based on Yumhack's status. (Restart OneLaunch to apply changes.)
+
+- **Account Editor**: Allows you to create or edit account details.
+  - **Title**: Indicates whether you're creating a new account or editing an existing one.
+  - **Edit Button**: Populates the fields with the selected account's information.
+  - **Delete Button**: Removes the selected account after confirmation.
+  - **Fields**:
+    - **Account ID**: A unique identifier for each account.
+    - **Account Email**: The email address used for logging into OHOL.
+    - **Account Key**: The key associated with the account.
+    - **Notes**: A field for personal notes.
+    - **Client Name** and **Yumhack Key**: Visible only if Yumhack is enabled.
+      - **Client Name**: Adds a custom string to the game client's title.
+      - **Yumhack Key**: Used for Yumhack Chat functionality.
+  - **Save/Create Button**: Saves changes or creates a new account, then clears the fields.
 
 ### Settings Tab
+
 ![Settings Tab](http://ohol.isbad.gg/img/settingstab1.1.png)
-The *Settings Tab* is home to the *Client Settings*, *Launcher Settings*, a *Notice*, and a *Defaults* button.
-- The *Client Settings* are all settings related to the OHOL client. I have avoided Yumlife specific settings, but they may come in the future. The settings are as follows :
 
-    - - **Radio Buttons**
-    - Auto Login `autoLogin.ini`
-    - Hard Quit Mode `hardToQuitMode.ini`
-    - Skip FPS Check `skipFPSMeasure.ini`
-    - FullScreen `fullscreen.ini`
-    - Borderless `borderless.ini`
-    - VSync `countOnVsync.ini`
-    - Hide UI `hideGameUI.ini`
-    - Mouse Highlights `showMouseOverHighlights.ini`
-    - E Key for RMB `eKeyForRightClick.ini`
-    - Mute Music `musicOff.ini`
-    - Mute Effects `soundEffectsOff.ini`
-    - Use Custom Server `useCustomServer.ini`
-    - Pause on Minimize `pauseOnMinimize.ini`
-    - VOG Mode `vogModeOn.ini`
-    - - **Text Fields**
-    - Screen Height `screenHeight.ini`
-    - Screen Width `screenWidth.ini`
-    - Cursor Scale `emulatedCursorScale.ini`
-    - Mouse Speed `mouseSpeed.ini`
-    - Music Volume `musicLoudness.ini`
-    - Effects Volume `soundEffectsLoudness.ini`
-    - Buffer Size `soundBufferSize.ini`
-    - Sample Rate `soundSampleRate.ini`
-    - Emote Duration `emotDuration.ini`
-    - Tutorial Done `tutorialDone.ini`
-    - Server Address `customServerAddress.ini`
-    - Server Port `customServerPort.ini`
-    - Server Password `serverPassword.ini`
-    - - **Drop List**
-    - Cursor Mode `cursorMode.ini`
-    
-- The *Launcher Settings* are all settings related to OneLaunch. These are stored in `/onelaunch/config.json`.
+The **Settings Tab** includes **Client Settings**, **Launcher Settings**, a **Notice**, and a **Defaults** button.
 
-    - The *Using Yumhack* setting will enable Yumhack related features in OneLaunch, and swap Yumhack related data when launching accounts.
-        - If OneLaunch is started with this of and then turned off OneLaunch will hide most things Yumhack related. The two extra columns in the *Accounts Manager List* will not dissapear until OneLaunch has been restarted. If you modify or add an account after disabling it (Without restarting) the list will refresh with emtpy data for those two extra columns. (Worry not, the data is not wiped, OneLaunch just displays nothing, enable Yumhack again to see the data)
-    - The *Debug Mode* setting enables extra (a stupid amount of extra) messages to be printed in the *Debug Console* if enabled.
-    - The *Executable* setting defines which executable to use. Don't try adding a path, your executable and OneLaunch should both be in the main OHOL directory. Just type the name of the executable here, with the .exe extension.
-    - The *Launch Delay* setting defines how long a period (in seconds) OneLaunch will wait between launching accounts.
-    -The *Selector Data* setting defines what data is shown in the *Account Selector* when OneLaunch loads. You can still toggle between the three options ("IDs", "Emails", "Names") in the *Launcher Tab*.
-    
-- The *Notice* is a notice message. Read it.
-- The *Defaults* button will restore both the OHOL Client Settings (Based of default settings in the OneLife Repository) and the OneLaunch settings to their defaults.
+- **Client Settings**: Adjust settings related to the OHOL client.
+
+  - **Radio Buttons**:
+    - **Auto Login** (`autoLogin.ini`)
+    - **Hard Quit Mode** (`hardToQuitMode.ini`)
+    - **Skip FPS Check** (`skipFPSMeasure.ini`)
+    - **Fullscreen** (`fullscreen.ini`)
+    - **Borderless** (`borderless.ini`)
+    - **VSync** (`countOnVsync.ini`)
+    - **Hide UI** (`hideGameUI.ini`)
+    - **Mouse Highlights** (`showMouseOverHighlights.ini`)
+    - **E Key for RMB** (`eKeyForRightClick.ini`)
+    - **Mute Music** (`musicOff.ini`)
+    - **Mute Effects** (`soundEffectsOff.ini`)
+    - **Use Custom Server** (`useCustomServer.ini`)
+    - **Pause on Minimize** (`pauseOnMinimize.ini`)
+    - **VOG Mode** (`vogModeOn.ini`)
+
+  - **Text Fields**:
+    - **Screen Height** (`screenHeight.ini`)
+    - **Screen Width** (`screenWidth.ini`)
+    - **Cursor Scale** (`emulatedCursorScale.ini`)
+    - **Mouse Speed** (`mouseSpeed.ini`)
+    - **Music Volume** (`musicLoudness.ini`)
+    - **Effects Volume** (`soundEffectsLoudness.ini`)
+    - **Buffer Size** (`soundBufferSize.ini`)
+    - **Sample Rate** (`soundSampleRate.ini`)
+    - **Emote Duration** (`emotDuration.ini`)
+    - **Tutorial Done** (`tutorialDone.ini`)
+    - **Server Address** (`customServerAddress.ini`)
+    - **Server Port** (`customServerPort.ini`)
+    - **Server Password** (`serverPassword.ini`)
+
+  - **Dropdown List**:
+    - **Cursor Mode** (`cursorMode.ini`)
+
+- **Launcher Settings**: Configure settings specific to OneLaunch, stored in `/onelaunch/config.json`.
+
+  - **Using Yumhack**: Enables Yumhack features and data swapping when launching accounts.
+    - Disabling this hides Yumhack-related elements after restarting OneLaunch.
+  - **Debug Mode**: Enables verbose logging in the Debug Console.
+  - **Executable**: Specifies which executable to use (e.g., `OneLife.exe`).
+  - **Launch Delay**: Sets the delay (in seconds) between launching multiple accounts.
+  - **Selector Data**: Determines what data is displayed in the Account Selector upon loading. Options include "IDs," "Emails," and "Names."
+
+- **Notice**: Contains important information—please read it.
+- **Defaults Button**: Restores OHOL Client Settings and OneLaunch settings to their default values.
 
 ## Installation
-Installing OneLaunch couldn't be easier. To download you will find two options: the executable, and a zip with the executable and two folders with files. The zip is for advanced users, it is recommended you just download the executable. Once you have the executable just place it in your main OHOL directory. If you're going with the zip file, just extract the contents of the zip into your main OHOL directory.
 
-When OneLaunch is properly installed the `OneLaunch.exe` and `OneLife.exe` should be right next to eachother. OneLaunch depends ont his location to path to the settings folder and find your executable. If you're using Yumlife or some other mod, you can configure OneLaunch to work with it by changing the setting in the *Settings Tab*
+Installing OneLaunch is straightforward. You have two download options: the executable and a zip file containing the executable and additional files. The zip is intended for advanced users; it's recommended to download the executable only.
 
-Notes about Zip file : I supplied this to show anyone who cares which files OneLaunch will generate if they don't exist, and what data it will populate them with. If you're looking to install OneLaunch into an OHOL installtion that you've used you should just install the executable.
+1. **Executable Only**:
+   - Download the `OneLaunch.exe` file.
+   - Place it in your main OHOL directory alongside `OneLife.exe`.
 
-##  Building
-Compiling is pretty straight forward. The GUI was built with [Ultimate++](https://www.ultimatepp.org/). I kept the project structure readable by TheIDE. The U++ library includes TheIDE. Load it, open the project, modify the UI if you wish, and built it using TheIDE.
-    
+2. **Zip File**:
+   - Download and extract the contents into your main OHOL directory.
+
+**Note**: Ensure that `OneLaunch.exe` and `OneLife.exe` are in the same directory. This placement allows OneLaunch to access necessary settings and executables. If you're using Yumlife or another mod, adjust the executable path in the **Settings Tab** accordingly.
+
+## Building
+
+Compiling OneLaunch is simple:
+
+1. Download and install [Ultimate++](https://www.ultimatepp.org/), which includes TheIDE.
+2. Open TheIDE and load the OneLaunch project.
+3. Modify the UI if desired.
+4. Build the project using TheIDE.
